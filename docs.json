@@ -1,53 +1,210 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "gray.guide",
+  "theme": "maple",
+  "name": "Gray Guide",
+  "description": "Can't afford Ozempic/Mounjaro? An unofficial sourcing & safety guide.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
-  },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
-      }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
-    }
+    "primary": "#0F766E",
+    "light": "#5EEAD4",
+    "dark": "#0F766E"
   },
   "logo": {
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+  "favicon": {
+    "light": "/img/logo-light-mode.svg",
+    "dark": "/img/logo-dark-mode.svg"
+  },
+  "fonts": {
+    "heading": {
+      "family": "Google Sans Flex"
+    },
+    "body": {
+      "family": "Google Sans"
+    }
+  },
+  "appearance": {
+    "default": "system"
+  },
+  "banner": {
+    "content": "📋 New: [Community-Verified Vendors](/sourcing-details/verified-vendors) directory now available",
+    "dismissible": true
+  },
+  "navigation": {
+    "pages": [
+      "index",
+      {
+        "group": "Getting Started",
+        "pages": [
+          "getting-started/options-overview",
+          "getting-started/medication-comparison",
+          "getting-started/choosing-retatrutide"
+        ]
+      },
+      {
+        "group": "Universal Safety Principles",
+        "pages": [
+          "universal-safety",
+          "universal-safety/risks-side-effects",
+          "universal-safety/dosing-principles",
+          "dosing-guide",
+          "safe-disposal"
+        ]
+      },
+      {
+        "group": "Path-Specific Guides",
+        "pages": [
+          "path-guides",
+          {
+            "group": "Path A: Ready-to-Use (Pen/Syringe/Tablet)",
+            "root": "path-guides/path-a-ready-to-use",
+            "pages": [
+              "path-guides/path-a-ready-to-use/supplies",
+              "path-guides/path-a-ready-to-use/instructions",
+              "path-guides/path-a-ready-to-use/injection-technique",
+              "path-guides/path-a-ready-to-use/troubleshooting"
+            ]
+          },
+          {
+            "group": "Path B: Authentic Vial",
+            "root": "path-guides/path-b-authentic-vial",
+            "pages": [
+              "path-guides/path-b-authentic-vial/supplies",
+              "path-guides/path-b-authentic-vial/authenticity",
+              "path-guides/path-b-authentic-vial/storage",
+              "path-guides/path-b-authentic-vial/preparation-use",
+              "path-guides/path-b-authentic-vial/injection-technique",
+              "path-guides/path-b-authentic-vial/troubleshooting"
+            ]
+          },
+          {
+            "group": "Path C: DIY Powder",
+            "root": "path-guides/path-c-diy-powder",
+            "pages": [
+              "path-guides/path-c-diy-powder/supplies",
+              "path-guides/path-c-diy-powder/reconstitution",
+              "path-guides/path-c-diy-powder/dosage-calculation",
+              "path-guides/path-c-diy-powder/drawing-injecting",
+              "path-guides/path-c-diy-powder/storage",
+              "path-guides/path-c-diy-powder/troubleshooting"
+            ]
+          }
+        ]
+      },
+      {
+        "group": "Sourcing Context & Details",
+        "pages": [
+          "sourcing-details",
+          "sourcing-details/verified-vendors",
+          "sourcing-details/shipping-china",
+          {
+            "group": "Crypto Payments Guide",
+            "root": "sourcing-details/crypto-payments",
+            "pages": [
+              "sourcing-details/crypto-payments/cash-app",
+              "sourcing-details/crypto-payments/paypal",
+              "sourcing-details/crypto-payments/coinbase",
+              "sourcing-details/crypto-payments/other-platforms",
+              "sourcing-details/crypto-payments/sending-critical"
+            ]
+          },
+          "sourcing-details/ancillary-supplies"
+        ]
+      },
+      {
+        "group": "Community",
+        "pages": [
+          "telegram",
+          "contact"
+        ]
+      }
+    ]
+  },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "label": "Vendors",
+        "href": "/sourcing-details/verified-vendors"
+      },
+      {
+        "label": "Contact",
+        "href": "/contact"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Join Telegram",
+      "href": "https://t.me/PRGassistant_bot?start=welcome"
+    }
+  },
+  "footer": {
+    "socials": {
+      "telegram": "https://t.me/PRGassistant_bot?start=welcome",
+      "reddit": "https://www.reddit.com/r/glpinsiders"
+    },
+    "links": [
+      {
+        "header": "Community",
+        "items": [
+          {
+            "label": "Telegram",
+            "href": "https://t.me/PRGassistant_bot?start=welcome"
+          },
+          {
+            "label": "Reddit",
+            "href": "https://www.reddit.com/r/glpinsiders"
+          }
+        ]
+      },
+      {
+        "header": "Guide",
+        "items": [
+          {
+            "label": "Vendors",
+            "href": "/sourcing-details/verified-vendors"
+          },
+          {
+            "label": "Contact Us",
+            "href": "/contact"
+          },
+          {
+            "label": "About",
+            "href": "/whoami"
+          }
+        ]
+      }
+    ]
+  },
+  "redirects": [
+    {
+      "source": "/retatrutide",
+      "destination": "/getting-started/choosing-retatrutide",
+      "permanent": true
+    },
+    {
+      "source": "/communities/stairway-to-gray",
+      "destination": "/sourcing-details",
+      "permanent": true
+    },
+    {
+      "source": "/search",
+      "destination": "/",
+      "permanent": true
+    }
+  ],
+  "seo": {
+    "metatags": {
+      "canonical": "https://www.gray.guide"
+    },
+    "indexing": "all"
+  },
+  "metadata": {
+    "timestamp": true
+  },
+  "integrations": {
+    "ga4": {
+      "measurementId": "G-EG72WD3T92"
     }
   },
   "contextual": {
@@ -56,17 +213,7 @@
       "view",
       "chatgpt",
       "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "perplexity"
     ]
-  },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
-    }
   }
 }
