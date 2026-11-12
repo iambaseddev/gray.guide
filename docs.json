@@ -28,7 +28,7 @@
     "default": "system"
   },
   "banner": {
-    "content": "📋 New: [Community-Verified Vendors](/sourcing-details/verified-vendors) directory now available",
+    "content": "New: [Community-Verified Vendors](/sourcing-details/verified-vendors) directory now available",
     "dismissible": true
   },
   "navigation": {
